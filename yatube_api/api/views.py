@@ -1,8 +1,5 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import status, viewsets
-from rest_framework import permissions
-from rest_framework.response import Response
-
+from rest_framework import viewsets
 from .serializers import (CommentSerializer, GroupSerializer,
                           PostSerializer, UserSerializer)
 from .permissions import IsOwner
@@ -23,19 +20,9 @@ class PostViewSet(viewsets.ModelViewSet):
         serializer.save(author=self.request.user)
 
 
-class GroupViewSet(viewsets.ModelViewSet):
+class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
-    permission_classes = (permissions.IsAuthenticated,)
-
-    def create(self, request, *args, **kwargs):
-        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
-
-    def update(self, request, *args, **kwargs):
-        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
-
-    def destroy(self, request, *args, **kwargs):
-        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
 class CommentViewSet(viewsets.ModelViewSet):
