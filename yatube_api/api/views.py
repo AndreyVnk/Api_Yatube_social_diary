@@ -1,8 +1,9 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets
+
+from .permissions import IsOwner
 from .serializers import (CommentSerializer, GroupSerializer,
                           PostSerializer, UserSerializer)
-from .permissions import IsOwner
 from posts.models import Comment, Group, Post, User
 
 
