@@ -16,7 +16,7 @@
 
 * Python 3
 * Django Rest Framework
-* [Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/#simple-jwt)
+* Simple JWT
 * SQLite
 
 ## Запуск проекта ##
@@ -48,4 +48,8 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-Эндпоинты, описанные в документации доступны на корневом адресе проекта: http://127.0.0.1:8000/api/v1/. Документация к API доступна на http://127.0.0.1:8000/redoc/.
+Эндпоинты, описанные в документации доступны на корневом адресе проекта: http://127.0.0.1:8000/api/v1/ . Документация к API доступна на http://127.0.0.1:8000/redoc/ .
+
+**Автор**
+
+AndreyVnk
