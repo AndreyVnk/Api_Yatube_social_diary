@@ -1,4 +1,4 @@
-#Project Yatube social diary.
+# Project Yatube social diary.
 Discription: This is a great Social network. I do it and I proud it.
 
 Technologies:
