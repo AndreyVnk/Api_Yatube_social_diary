@@ -1,8 +1,8 @@
 # Project Yatube social diary.
 Discription: This is a great Social network. I do it and I proud it.
 
+<img alt="APM" src="https://img.shields.io/apm/l/MIT?style=plastic">
 
-https://img.shields.io/apm/l/MIT?style=plastic
 
 Technologies:
 Python 3.7
